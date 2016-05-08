@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">How To Pay Online</string>
+    <string name="choose_online_shop_label">Choose Online Shop</string>
+    <string name="choose_bank_label">Choose Bank</string>
+    <string name="choose_ewallet_provider">Choose e-Wallet Provider</string>
+    <string name="choose_minimarket_label">Choose Minimarket</string>
+    <string name="payment_label">Payment Total</string>
+    <string name="button_send">Send</string>
+    <string name="method_label">Payment Method :</string>
+    <string name="online_shop_label">Online Shop :</string>
+    <string name="howtopay_label">How To Pay :</string>
+    <string name="adminfee_label">Admin Fee :</string>
+    <string name="paymenttotal_label">Grand Total :</string>
+    <string name="button_finish">Finish</string>
+    <string name="method_na">Sorry, payment method not available yet</string>
+    <string name="validation_total_payment">Sorry, you have to input total payment</string>
+    <string-array name="online_shop_array">
+        <item>Elevenia</item>
+        <item>Lazada</item>
+    </string-array>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_all_margin"
+        android:orientation="vertical"
+        tools:context="com.iak2016.chan.carabayaronline.DetailActivity">
+
+        <TextView
+            android:id="@+id/tv_payment_method_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_bottom_16"
+            android:text="e-banking"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_online_shop_label"
+            android:textSize="@dimen/text_size_16" />
+
+        <Spinner
+            android:id="@+id/sp_choose_online_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:paddingBottom="@dimen/padding_bottom_16" />
+
+        <TextView
+            android:id="@+id/tv_choose_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16" />
+
+        <RadioGroup
+            android:id="@+id/rg_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_bottom_16">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="chooseBank"
+                android:text="BCA" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="chooseBank"
+                android:text="Mandiri" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="chooseBank"
+                android:text="BNI" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_ewallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_bottom_16"
+            android:visibility="gone">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="chooseEwalletProvider"
+                android:text="XL Tunai" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="chooseEwalletProvider"
+                android:text="Indosat dompetku" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="chooseEwalletProvider"
+                android:text="TCASH" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="chooseEwalletProvider"
+                android:text="Mandiri e-cash" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_minimarket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_bottom_16"
+            android:visibility="gone">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="chooseMinimarket"
+                android:text="Indomaret" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_label"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/et_total_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/padding_bottom_16"
+            android:singleLine="true"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:onClick="viewResult"
+            android:text="@string/button_send"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+</ScrollView>

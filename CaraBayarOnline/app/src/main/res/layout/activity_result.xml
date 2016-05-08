@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_all_margin"
+    tools:context="com.iak2016.chan.carabayaronline.ResultActivity">
+
+    <TextView
+        android:id="@+id/tv_payment_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_bottom_16"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_payment_provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_payment_method"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_online_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/tv_payment_provider"
+        android:gravity="end"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_admin_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_payment_method"
+        android:textSize="@dimen/text_size_24"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_admin_fee"
+        android:text="@string/adminfee_label"
+        android:textSize="@dimen/text_size_12"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_payment_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_payment_method"
+        android:layout_toRightOf="@id/tv_admin_fee"
+        android:gravity="end"
+        android:textSize="@dimen/text_size_24"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_payment_total"
+        android:layout_alignParentRight="true"
+        android:gravity="end"
+        android:text="@string/paymenttotal_label"
+        android:textSize="@dimen/text_size_12"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:onClick="finish"
+        android:text="@string/button_finish"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/tv_how_to_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_admin_fee"
+        android:paddingTop="@dimen/padding_top_16"
+        android:text="@string/howtopay_label"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_how_to_pay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_how_to_pay_content"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:src="@drawable/ebanking_elevenia_bca"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

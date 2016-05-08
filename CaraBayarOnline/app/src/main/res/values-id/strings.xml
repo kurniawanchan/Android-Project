@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cara Bayar Online</string>
+    <string name="choose_online_shop_label">Pilih Online Shop</string>
+    <string name="choose_bank_label">Pilih Bank</string>
+    <string name="choose_ewallet_provider">Pilih Penyedia e-Wallet</string>
+    <string name="choose_minimarket_label">Pilih Minimarket</string>
+    <string name="payment_label">Total Bayar</string>
+    <string name="button_send">Kirim</string>
+    <string name="method_label">Metode Bayar :</string>
+    <string name="online_shop_label">Online Shop :</string>
+    <string name="howtopay_label">Cara Bayar :</string>
+    <string name="adminfee_label">Biaya Admin :</string>
+    <string name="paymenttotal_label">Total Pembayaran :</string>
+    <string name="button_finish">Selesai</string>
+    <string name="method_na">Maaf, metode pembayaran belum tersedia</string>
+    <string name="validation_total_payment">Maaf, anda harus memasukkan nilai pembayaran</string>
+    <string-array name="online_shop_array">
+        <item>Elevenia</item>
+        <item>Lazada</item>
+    </string-array>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hello World</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_entry">Ucapkan</string>
+    <string name="birthday_person">Siapa yang Ulang Tahun?</string>
+    <string name="birthyear">Tahun berapa lahirnya?</string>
+    <string name="happy_birthday">Selamat Ulang Tahun</string>
+    <string name="wish">Semoga Panjang Umur dan Sehat Selalu^^</string>
+    <string name="copyright">Ucapan Ultah v2.0</string>
+</resources>
