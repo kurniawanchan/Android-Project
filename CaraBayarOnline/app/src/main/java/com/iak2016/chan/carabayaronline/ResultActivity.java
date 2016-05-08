@@ -44,18 +44,11 @@ public class ResultActivity extends AppCompatActivity {
         TextView tvOnlineShop = (TextView) findViewById(R.id.tv_online_shop);
         tvOnlineShop.setText(onlineShop);
 
-        // Define Content
-        //ImageView ivHowToPayContent = (ImageView) findViewById(R.id.iv_how_to_pay_content);
-
         // populate content
         // Internet Banking Payment Method
         if (paymentMethod.equalsIgnoreCase("e-banking") && onlineShop.equalsIgnoreCase("elevenia") && paymentBank.equalsIgnoreCase("bca")) {
-            // set adminfee
             adminFee = 0;
-
-            // populate content
-            //ivHowToPayContent.setImageResource(R.drawable.ebanking_elevenia_bca);
-            /*howToPayContent = "Minimum pembayaran menggunakan KlikBCA adalah Rp 10.000.\n" +
+            howToPayContent = "Minimum pembayaran menggunakan KlikBCA adalah Rp 10.000.\n" +
                     "Setelah Anda memilih KlikBCA di halaman Selesai Belanja, maka Anda akan dibawa ke layar login KlikBCA. \n" +
                     "Pastikan alamat domain yang tertulis di address bar browser adalah: https://ibank.klikbca.com/\n" +
                     "\n" +
@@ -68,7 +61,7 @@ public class ResultActivity extends AppCompatActivity {
                     "Di halaman berikutnya, akan muncul pemberitahuan tentang transaksi yang berhasil\n" +
                     "Pembayaran kamu dengan KlikBCA sudah berhasil dan diverifikasi secara otomatis. Pesanan pun\n" +
                     "langsung diteruskan ke penjual.\n" +
-                    "impan bukti pembayaran Anda jika terjadi kendala pada transaksi";*/
+                    "impan bukti pembayaran Anda jika terjadi kendala pada transaksi";
         } else if (paymentMethod.equalsIgnoreCase("e-banking") && onlineShop.equalsIgnoreCase("lazada") && paymentBank.equalsIgnoreCase("bca")) {
             adminFee = 0;
             howToPayContent = "Login pada aplikasi KlikBCA, masukkan user ID & PIN\n" +
@@ -237,6 +230,10 @@ public class ResultActivity extends AppCompatActivity {
                     "\n" +
                     "Info lebih lanjut silahkan buka di http://duniadigital.co.id/dompetku.php atau hubungi call center 100 (Mentari,IM3), 111 (Matrix)";
         }
+
+        // Define Content
+        TextView tvHowToPayContent = (TextView) findViewById(R.id.tv_how_to_pay_content);
+        tvHowToPayContent.setText(howToPayContent);
 
         // Populate Admin Fee
         TextView tvAdminFee = (TextView) findViewById(R.id.tv_admin_fee);
